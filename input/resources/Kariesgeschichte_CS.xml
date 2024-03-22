@@ -1,0 +1,43 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Kariesgeschichte" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Kariesgeschichte" />
+  <version value="1.5.0" />
+  <name value="Kariesgeschichte" />
+  <title value="Kariesgeschichte" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Kariesgeschichte in Bezug auf den Zeitraum ohne kariöse Läsion" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir/CodeSystem/Kariesgeschichte" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="w12" />
+    <display value="weniger als 12 Monate" />
+  </concept>
+  <concept>
+    <code value="12u23" />
+    <display value="zwischen 12 und 23 Monaten" />
+  </concept>
+  <concept>
+    <code value="24u35" />
+    <display value="Zwischen 24 und 35 Monaten" />
+  </concept>
+  <concept>
+    <code value="m36" />
+    <display value="mehr als 36 Monate" />
+  </concept>
+</CodeSystem>

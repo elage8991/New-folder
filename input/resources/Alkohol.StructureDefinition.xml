@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Alkoholkonsum" />
+  <url value="http://somewhere.org/fhir/StructureDefinition/Alkoholkonsum" />
+  <name value="Alkoholkonsum" />
+  <title value="Alkoholkonsum" />
+  <status value="draft" />
+  <description value="Dieses Profil wird für die Einstufung des Alkoholkonsums im Rahmen der Risikobewertung von Mundkrebs und allgemeiner Mundgesundheit durch den SOHS verwendet. Instanzen dieses Profil können nur bestimmte Werte des zugehörigen ValueSets &quot;Alkoholkonsum&quot; annehmen. Jede Instanz muss einen entsprechenden Wert besitzen." />
+  <fhirVersion value="5.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <short value="Alkoholkonsum" />
+      <definition value="Alkoholkonsum eines Patienten als Faktor des SOHS" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <short value="Patient" />
+      <definition value="Die Observation bezieht sich auf den Alkoholkonsum eines Patienten" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Alkoholkonsum" />
+        <valueSet value="http://somewhere.org/fhir/ValueSet/Alkoholkonsum" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

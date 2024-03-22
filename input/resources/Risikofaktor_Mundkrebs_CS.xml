@@ -1,0 +1,36 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Mundkrebs_Risikofaktor" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Mundkrebs_Risikofaktor" />
+  <version value="1.5.0" />
+  <name value="Mundkrebs_Risikofaktor" />
+  <title value="Mundkrebs_Risikofaktor" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Mundkrebs Risikofaktoren des SOHS" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir/CodeSystem/Mundkrebs_Risikofaktor" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="2" />
+  <concept>
+    <code value="HP" />
+    <display value="HPV Infektion" />
+  </concept>
+  <concept>
+    <code value="MK" />
+    <display value="Mundkrebs Befall in der Vergangenheit" />
+  </concept>
+  
+</CodeSystem>

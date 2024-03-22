@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Kariesrisiko" />
+  <url value="http://somewhere.org/fhir/StructureDefinition/Kariesrisikofaktor" />
+  <name value="Kariesrisikofaktor" />
+  <title value="Kariesrisikofaktor" />
+  <status value="draft" />
+  <description value="Mit diesem Profil werden Kariesrisikofaktoren beschrieben, die im Rahmen der Risikobewertung von Karies und allgemeiner Mundgesundheit durch den SOHS betrachtet werden. Instanzen dieses Profil können nur bestimmte Werte des zugehörigen ValueSets &quot;Kariesrisikofaktoren&quot; annehmen. Jede Instanz muss einen entsprechenden Wert besitzen." />
+  <fhirVersion value="5.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <fixedCodeableConcept>
+        <text value="Kariesrisikofaktor" />
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <binding>
+        <strength value="required" />
+        <description value="Kariesrisikofaktoren" />
+        <valueSet value="http://somewhere.org/fhir/ValueSet/Karies_Risikofaktoren" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

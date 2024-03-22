@@ -1,0 +1,52 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Risikofaktor_Paro" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Risikofaktor_Paro" />
+  <version value="1.5.0" />
+  <name value="Risikofaktor_Paro" />
+  <title value="Risikofaktor_Paro" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Risikofaktoren für Parodontitis des SOHS" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir
+  /CodeSystem/Risikofaktor_Paro" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="6" />
+  <concept>
+    <code value="MH" />
+    <display value="Schlechte Mundhygiene" />
+  </concept>
+  <concept>
+    <code value="FK" />
+    <display value="Tastbare Furkation" />
+  </concept>
+  <concept>
+    <code value="VKL" />
+    <display value="Vertikale Knochenläsion" />
+  </concept>
+  <concept>
+    <code value="SMP" />
+    <display value="Schlechte Mundpflege" />
+  </concept>
+   <concept>
+    <code value="SR" />
+    <display value="Subgingivale Restaurationen vorhanden" />
+  </concept>
+    <concept>
+    <code value="SZ" />
+    <display value="Subgingivaler Zahnstein vorhanden" />
+  </concept>
+</CodeSystem>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="example"/>
+  <meta>
+    <profile value="hhttp://somewhere.org/fhir/StructureDefinition/PSI"/>
+  </meta>
+  <status value="final"/>
+  <code>
+     <coding>
+      <system value="http://loinc.org"/>
+      <code value="34014-1"/>
+      <display value="Periodontal screening and recording special finding Gingiva PSR scale"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient_Paro"/>
+  </subject>
+  <effectiveDateTime value="2024-03-10"/>
+  <component> 
+    <code> 
+      <coding> 
+        <system value="http://somewhere.org/fhir/ValueSet/Sechstant"/> 
+        <code value="1"/> 
+        <display value="Backenzähne oben rechts"/> 
+      </coding> 
+  <valueString>
+    <coding>
+      <system value="http://somewhere.org/fhir/ValueSet/PSI"/>
+      <code value="3"/>
+      <display value="Verdacht auf Parodontitis"/>
+    </coding>
+  </valueString>
+  </component> 
+   <component> 
+    <code> 
+      <coding> 
+        <system value="http://somewhere.org/fhir/ValueSet/Sechstant"/> 
+        <code value="2"/> 
+        <display value="Frontzahnbereich oben"/> 
+      </coding> 
+  <valueString>
+    <coding>
+      <system value="http://somewhere.org/fhir/ValueSet/PSI"/>
+      <code value="4"/>
+      <display value="Starker Verdacht auf Parodontitis"/>
+    </coding>
+  </valueString>
+  </component> 
+   <component> 
+    <code> 
+      <coding> 
+        <system value="http://somewhere.org/fhir/ValueSet/Sechstant"/> 
+        <code value="3"/> 
+        <display value="Backenzähne oben links"/> 
+      </coding> 
+  <valueString>
+    <coding>
+      <system value="http://somewhere.org/fhir/ValueSet/PSI"/>
+      <code value="3"/>
+      <display value="Verdacht auf Parodontitis"/>
+    </coding>
+  </valueString>
+  </component> 
+   <component> 
+    <code> 
+      <coding> 
+        <system value="http://somewhere.org/fhir/ValueSet/Sechstant"/> 
+        <code value="4"/> 
+        <display value="Backenzähne unten links"/> 
+      </coding> 
+  <valueString>
+    <coding>
+      <system value="http://somewhere.org/fhir/ValueSet/PSI"/>
+      <code value="3"/>
+      <display value="Verdacht auf Parodontitis"/>
+    </coding>
+  </valueString>
+  </component> 
+   <component> 
+    <code> 
+      <coding> 
+        <system value="http://somewhere.org/fhir/ValueSet/Sechstant"/> 
+        <code value="5"/> 
+        <display value="Frontzahnbereich unten"/> 
+      </coding> 
+  <valueString>
+    <coding>
+      <system value="http://somewhere.org/fhir/ValueSet/PSI"/>
+      <code value="3"/>
+      <display value="Verdacht auf Parodontitis"/>
+    </coding>
+  </valueString>
+  </component> 
+   <component> 
+    <code> 
+      <coding> 
+        <system value="http://somewhere.org/fhir/ValueSet/Sechstant"/> 
+        <code value="6"/> 
+        <display value="Backenzähne unten rechts"/> 
+      </coding> 
+  <valueString>
+    <coding>
+      <system value="http://somewhere.org/fhir/ValueSet/PSI"/>
+      <code value="4"/>
+      <display value="Starker Verdacht auf Parodontitis"/>
+    </coding>
+  </valueString>
+  </component> 
+</Observation>

@@ -1,0 +1,47 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Rauchen_Status" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Rauchen_Status" />
+  <version value="1.5.0" />
+  <name value="Rauchen_Status" />
+  <title value="Rauchen_Status" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Raucher Status als Risikofaktor für Parodontitis" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir/CodeSystem/Rauchen_Status" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="5" />
+  <concept>
+    <code value="EMR" />
+    <display value="Ehemaliger (in den letzten 10 Jahre) moderater Raucher (mehr als 10 Zigaretten pro Tag)" />
+  </concept>
+  <concept>
+    <code value="ER" />
+    <display value="Ehemaliger (in den letzten 10 Jahre) starker Raucher (weniger als 10 Zigaretten pro Tag)" />
+  </concept>
+  <concept>
+    <code value="MR" />
+    <display value="Moderater Raucher (mehr als 10 Zigaretten pro Tag)" />
+  </concept>
+  <concept>
+    <code value="SR" />
+    <display value="Starker Raucher (weniger als 10 Zigaretten pro Tag)" />
+  </concept>
+  <concept>
+    <code value="NR" />
+    <display value="Nichtraucher" />
+  </concept>
+</CodeSystem>

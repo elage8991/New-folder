@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://example.org/fhir/StructureDefinition/Bildungsniveau" />
+  <name value="Bildungsniveau" />
+  <status value="draft" />
+  <fhirVersion value="5.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <fixedCodeableConcept>
+        <text value="Bildungsniveau" />
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <binding>
+        <strength value="required" />
+        <description value="Bildungsniveau" />
+        <valueSet value="https://example.org/fhir/ValueSet/Bildungsniveau" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

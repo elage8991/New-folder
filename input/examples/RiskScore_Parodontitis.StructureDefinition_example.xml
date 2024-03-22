@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="RiskScoreParo" />
+  <url value="http://somewhere.org/fhir/StructureDefinition/RiskScore_Parodontitis" />
+  <name value="RiskScore_Parodontitis" />
+  <title value="RiskScore Parodontitis" />
+  <status value="draft" />
+  <description value="Dieses Profil beschreibt die Zusammensetzung des Risikoscores von Parodontitis im Rahmen der Risikobewertung durch den SOHS. Der Score basiert auf anderen Instanzen, die in diesem IG beschrieben sind. Jede Instanz des Riskscore Parodontitis Profils muss die entsprechenden Slices des hasMember Datenelementes enthalten. Der Risikowert wird durch einen Black Box Algorithmus berechnet und wird ebenfalls für die Existenz einer Instanz vorrausgesetzt." />
+  <fhirVersion value="5.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <fixedCodeableConcept>
+        <text value="RiskScore Parodontitis" />
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="integer" />
+      </type>
+    </element>
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="identifier.type.coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.hasMember:Risikofaktoren">
+      <path value="Observation.hasMember" />
+      <sliceName value="Risikofaktoren" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://somewhere.org/fhir/StructureDefinition/Risikofaktor_Parodontitis" />
+      </type>
+    </element>
+    <element id="Observation.hasMember:Rauchen">
+      <path value="Observation.hasMember" />
+      <sliceName value="Rauchen" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://somewhere.org/fhir/StructureDefinition/Rauchen_Status" />
+      </type>
+    </element>
+    <element id="Observation.hasMember:Diabetes">
+      <path value="Observation.hasMember" />
+      <sliceName value="Diabetes" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://somewhere.org/fhir/StructureDefinition/DiabetesStatus" />
+      </type>
+    </element>
+    <element id="Observation.hasMember:Schutzfaktoren">
+      <path value="Observation.hasMember" />
+      <sliceName value="Schutzfaktoren" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://somewhere.org/fhir/StructureDefinition/Schutzfaktor_Parodontitis" />
+      </type>
+    </element>
+    <element id="Observation.hasMember:Bildungsniveau">
+      <path value="Observation.hasMember" />
+      <sliceName value="Bildungsniveau" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://somewhere.org/fhir/StructureDefinition/Bildungsniveau" />
+      </type>
+    </element>
+    <element id="Observation.hasMember:PSI">
+      <path value="Observation.hasMember" />
+      <sliceName value="PSI" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://somewhere.org/fhir/StructureDefinition/PSI" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

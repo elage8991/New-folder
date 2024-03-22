@@ -1,0 +1,43 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Alkoholkonsum" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Alkoholkonsum" />
+  <version value="1.5.0" />
+  <name value="Alkoholkonsum" />
+  <title value="Alkoholkonsum" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Einstufung des Alkoholkonsum als Risikofaktor für Mundgesundheit" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir/CodeSystem/Alkoholkonsum" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="KK" />
+    <display value="Kein Alkoholkonsum" />
+  </concept>
+  <concept>
+    <code value="GK" />
+    <display value="weniger als 1 Getränk pro Tag" />
+  </concept>
+  <concept>
+    <code value="MK" />
+    <display value="2 Getränke pro Tag" />
+  </concept>
+  <concept>
+    <code value="SK" />
+    <display value="3 oder mehr Getränke pro Tag" />
+ </concept>
+</CodeSystem>

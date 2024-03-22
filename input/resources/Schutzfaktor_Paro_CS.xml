@@ -1,0 +1,44 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Schutzfaktor_Paro" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Risikofaktor_Paro" />
+  <version value="1.5.0" />
+  <name value="Schutzfaktor_Paro" />
+  <title value="Schutzfaktor_Paro" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Schutzfaktoren für Parodontitis des SOHS" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir/CodeSystem/Schutzfaktor_Paro" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="VSI" />
+    <display value="Adhärentes Vorsorgeintervall" />
+  </concept>
+  <concept>
+    <code value="API" />
+    <display value="Adhärentes Prophylaxeintervall" />
+  </concept>
+  <concept>
+    <code value="TR" />
+    <display value="Taschenreinigung wurde durchgeführt" />
+  </concept>
+  <concept>
+    <code value="ZS" />
+    <display value="Zahnstein wurde entfernt und Wurzeln geglättet" />
+  </concept>
+  
+</CodeSystem>

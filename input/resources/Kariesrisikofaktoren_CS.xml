@@ -1,0 +1,65 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Karies_Risikofaktoren" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Karies_Risikofaktoren" />
+  <version value="1.5.0" />
+  <name value="Karies_Risikofaktoren" />
+  <title value="Karies_Risikofaktoren" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Karies Risikofaktoren des SOHS" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir/CodeSystem/Karies_Risikofaktoren" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="9" />
+  <concept>
+    <code value="MH" />
+    <display value="Schlechte Mundhygiene" />
+  </concept>
+  <concept>
+    <code value="MT" />
+    <display value="Mundtrockenheit" />
+  </concept>
+  <concept>
+    <code value="MP" />
+    <display value="Schlechte Mundpflege" />
+  </concept>
+  <concept>
+    <code value="KG" />
+    <display value="Kieferorthopädisches Gerät"/> 
+    </concept>
+    <concept>
+    <code value="ZK" />
+    <display value="Zuckerkonsum zwischen den Mahlzeiten öfter als 4 mal täglich" />
+  </concept>
+  <concept>
+    <code value="DA" />
+    <display value="Drogen oder Alkoholkonsum" />
+  </concept>
+  <concept>
+    <code value="GAE" />
+    <display value="Starke Gesundheitliche Änderungen in den letzten 12 Monaten" />
+  </concept>
+  <concept>
+    <code value="ZE" />
+    <display value="Zahnextraktion aufgrund von Karies in den letzten 36 Monaten" />
+  </concept>
+  <concept>
+    <code value="FW" />
+    <display value="Mindestens 1 Zahn mit freiliegender Wurzel" />
+  </concept>
+     
+  
+</CodeSystem>

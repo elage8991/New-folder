@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="RauchenStatus" />
+  <url value="http://somewhere.org/fhir/StructureDefinition/Rauchen_Status" />
+  <name value="Rauchen_Status" />
+  <title value="Raucherstatus" />
+  <status value="draft" />
+  <description value="Dieses Profil wird für die Einstufung des Raucherstatus im Rahmen der Risikobewertung von Parodontitis und allgemeiner Mundgesundheit durch den SOHS verwendet. Instanzen dieses Profils können nur bestimmte Werte des zugehörigen ValueSets &quot;Raucherstatus&quot; annehmen. Jede Instanz muss einen entsprechenden Wert besitzen." />
+  <fhirVersion value="5.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="72166-2" />
+          <display value="Tobacco smoking status" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <binding>
+        <strength value="required" />
+        <description value="Rauchen Status" />
+        <valueSet value="http://somewhere.org/fhir/ValueSet/Rauchen" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

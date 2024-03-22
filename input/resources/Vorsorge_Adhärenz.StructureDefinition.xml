@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="VorsorgeAdhaerenz" />
+  <url value="http://somewhere.org/fhir/StructureDefinition/Vorsorge_Adhaerenz" />
+  <name value="Vorsorge_Adhaerenz" />
+  <title value="Vorsorgeadhärenz" />
+  <status value="draft" />
+  <description value="Dieses Profil  dient zur Beurteilung der Einhaltung von Recall Intervallen in Bezug auf Vorsorgeuntersuchungen. Instanzen dieses Profil können nur bestimmte Werte des zugehörigen ValueSets &quot;RecallAdhaerenz&quot; annehmen. Jede Instanz muss einen entsprechenden Wert besitzen." />
+  <fhirVersion value="5.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <fixedCodeableConcept>
+        <text value="Vorsorge Adhärenz" />
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

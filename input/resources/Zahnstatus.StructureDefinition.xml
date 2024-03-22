@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Zahnstatus" />
+  <url value="http://somewhere.org/fhir/StructureDefinition/Zahnstatus" />
+  <name value="Zahnstatus" />
+  <title value="Zahnstatus" />
+  <status value="draft" />
+  <description value="Dieses Profil dient der Bewretung des Zahnstatus eines Patienten im Rahmen der Risikobewertung von Karies und allgemeiner Mundgesundheit durch den SOHS. Jede Instanz muss einen Wert besitzen, der an das ValueSet &quot;Zahnstatus&quot; gebunden ist." />
+  <fhirVersion value="5.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <binding>
+        <strength value="required" />
+        <description value="Zahnstatus" />
+        <valueSet value="http://somewhere.org/fhir/ValueSet/Zahnstatus" />
+      </binding>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,57 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Karies_Schutzfaktoren" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Karies_Schutzfaktoren" />
+  <version value="1.5.0" />
+  <name value="Karies_Schutzfaktoren" />
+  <title value="Karies_Schutzfaktoren" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Karies Schutzfaktoren des SOHS" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir/CodeSystem/Karies_Schutzfaktoren" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="7" />
+  <concept>
+    <code value="AV" />
+    <display value="Adhärentes Vorsorge Intervall" />
+  </concept>
+  <concept>
+    <code value="AP" />
+    <display value="Adhärentes Prophylaxe Intervall" />
+  </concept>
+  <concept>
+    <code value="FA" />
+    <display value="Flurid in den letzten 6 Monaten angewendet" />
+  </concept>
+  <concept>
+    <code value="FW" />
+    <display value="Konsum von Fluridiertem Wasser "/> 
+    </concept>
+    <concept>
+    <code value="AF" />
+    <display value="Einnahme anderer Fluride " />
+  </concept>
+  <concept>
+    <code value="CH" />
+    <display value="Chlorhexidine 1 Woche pro Monat in den letzten 6 Monaten" />
+  </concept>
+  <concept>
+    <code value="XY" />
+    <display value=" Xylitol 4 mal täglich in den letzten 6 Monaten" />
+  </concept>
+  
+  
+</CodeSystem>

@@ -1,0 +1,42 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Sextant" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Adhaerenz" />
+  <version value="1.5.0" />
+  <name value="Adhaerenz" />
+  <title value="Adhaerenz" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Beschreibung der Adhärenz in Bezug auf Vorsorge und Prophylaxe Intervalle" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir/CodeSystem/Adhaerenz" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="3" />
+  <concept>
+    <code value="Sehr Gut" />
+    <display value="Einhaltung des Intervalls" />
+    <definition value="Die Adhärenz in Bezug auf Recall Intervall ist sehr gut"/>
+  </concept>
+  <concept>
+    <code value="Mangelhaft" />
+    <display value="Moderate Überschreitung des Intervalls" />
+     <definition value="Die Adhärenz in Bezug auf Recall Intervall ist mangelhaft" />
+  </concept>
+  <concept>
+    <code value="Ungenügend" />
+    <display value="Starke Überschreitung des Intervalls" />
+    <definition value="Die Adhärenz in Bezug auf Recall Intervall ist ungenügend" />
+  </concept>
+</CodeSystem>

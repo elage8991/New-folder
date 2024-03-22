@@ -1,0 +1,43 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Diabetes_Einstellung" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Diabetes_Einstellung" />
+  <version value="1.5.0" />
+  <name value="Diabetes_Einstellung" />
+  <title value="Diabetes_Einstellung" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Maß für den Diabetes Status" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir/CodeSystem/Diabetes_Einstellung" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="4" />
+  <concept>
+    <code value="Kein Diabetes" />
+    <display value="Kein Diabetes oder Unbekannt" />
+  </concept>
+  <concept>
+    <code value="Gut" />
+    <display value="Gute Blutzuckerkontrolle Hba1c kleiner als 6.5" />
+  </concept>
+  <concept>
+    <code value="Moderat" />
+    <display value="Moderate Blutzuckerkontrolle HbA1c zwischen 6.5 und 7.5" />
+  </concept>
+  <concept>
+    <code value="Schlecht" />
+    <display value="Schlechte Diabeteseinstellung HbA1c größer als 7.5" />
+  </concept> 
+</CodeSystem>

@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Bildungsniveau" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+  </meta>
+  <url value="http://somewhere.org/fhir/ValueSet/Bildungsniveau" />
+  <version value="1.5.0" />
+  <name value="Bildungsniveau" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Einstufung des Bildungsniveaus als Risiko oder Schutzfaktor für Mundgesundheit" />
+  <compose>
+    <include>
+      <system value="http://somewhere.org/fhir/CodeSystem/Bildungsniveau" />
+    </include>
+  </compose>
+</ValueSet>

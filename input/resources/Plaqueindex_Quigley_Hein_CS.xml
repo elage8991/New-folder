@@ -1,0 +1,52 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Plaqueindex_Quigley_Hein" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+  </meta>
+  <url value="http://somewhere.org/fhir/CodeSystem/Plaqueindex_Quigley_Hein" />
+  <version value="1.5.0" />
+  <name value="Plaqueindex_Quigley_Hein" />
+  <title value="SPlaqueindex_Quigley_Hein" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2024-02-01" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Skala des Plaqueindex nach Quigley Hein" />
+  <copyright value="HL7 Deutschland e.V." />
+  <caseSensitive value="false" />
+  <valueSet value="http://somewhere.org/fhir/CodeSystem/Plaqueindex_Quigley_Hein" />
+  <compositional value="false" />
+  <content value="complete" />
+  <count value="6" />
+  <concept>
+    <code value="0" />
+    <display value="keine Plaque" />
+  </concept>
+  <concept>
+    <code value="1" />
+    <display value="vereinzelte Plaqueinseln" />
+  </concept>
+  <concept>
+    <code value="2" />
+    <display value="deutlich zusammenhängende Plaquelinie am Gingivalrand bis zu 1 mm" />
+  </concept>
+  <concept>
+    <code value="3" />
+    <display value="Plaqueausdehnung im zervikalen Drittel des Zahnes" />
+  </concept>
+     <concept>
+    <code value="4" />
+    <display value="Plaqueausdehnung bis ins zweite Zahndrittel" />
+  </concept>
+   <concept>
+    <code value="5" />
+    <display value="Plaqueausdehnung koronal bis zur Schneidekante" />
+  </concept>
+  
+</CodeSystem>

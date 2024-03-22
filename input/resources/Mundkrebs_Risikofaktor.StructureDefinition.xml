@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Mundkrebsrisikofaktor" />
+  <url value="http://somewhere.org/fhir/StructureDefinition/Risikofaktor_Mundkrebs" />
+  <name value="Mundkrebsrisikofaktor" />
+  <title value="Mundkrebsrisikofaktor" />
+  <status value="draft" />
+  <description value="Mit diesem Profil werden Mundkrebsrisikofaktoren beschrieben, die im Rahmen der Risikobewertung von Karies und allgemeiner Mundgesundheit durch den SOHS betrachtet werden. Instanzen dieses Profil können nur bestimmte Werte des zugehörigen ValueSets &quot;Mundkrebsrisikofaktoren&quot; annehmen. Jede Instanz muss einen entsprechenden Wert besitzen." />
+  <fhirVersion value="5.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <fixedCodeableConcept>
+        <text value="Mundkrebs Risikofaktor" />
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <binding>
+        <strength value="required" />
+        <description value="Mundkrebs_Risikofaktor" />
+        <valueSet value="http://somewhere.org/fhir/ValueSet/Mundkrebs_Risikofaktor" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

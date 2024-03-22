@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://somewhere.org/fhir/CodeSystem/Schutzfaktor_Paro"
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system http://somewhere.org/fhir/CodeSystem/Schutzfaktor_Paro"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "url": "http://somewhere.org/fhir/ValueSet/Schutzfaktor_Paro", "version": "0.2.0"}####
+e: {
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system http://somewhere.org/fhir/CodeSystem/Schutzfaktor_Paro"
+}
+-------------------------------------------------------------------------------------

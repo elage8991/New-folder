@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PlaqueindexQuigleyHein" />
+  <url value="http://somewhere.org/fhir/StructureDefinition/Plaqueindex_Quigley_Hein" />
+  <name value="Plaqueindex_Quigley_Hein" />
+  <title value="Plaqueindex Quigley Hein" />
+  <status value="draft" />
+  <description value="Mit diesem Profil wird der Plaque Index nach Quigley Hein eines Patienten beschrieben. Dieser Wert setzt sich aus mindestens einer und beschränkt durch die Anzahl der Zähne des Patienten beliebig vielen Komponenten zusammen. Instanzen dieses Profils müssen entsprechend einen Indexwert enthalten." />
+  <fhirVersion value="5.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <fixedCodeableConcept>
+        <text value="Plaqueindex Quigley Hein" />
+      </fixedCodeableConcept>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="integer" />
+      </type>
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component.code">
+      <path value="Observation.component.code" />
+      <binding>
+        <strength value="required" />
+        <description value="Plaque Index Quigley Hein" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/tooth" />
+      </binding>
+    </element>
+    <element id="Observation.component.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Palque Index" />
+        <valueSet value="http://somewhere.org/fhir/ValueSet/Plaqueindex_Quigley_Hein" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
