@@ -20,7 +20,8 @@ xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single
     <coding>
       <system value="http://somewhere.org/fhir/ValueSet/Bildungsniveau"/>
       <code value="HRA"/>
-      <value value="Haupt- oder Realschulabschluss">
+      <value value="Haupt- oder Realschulabschluss"/>
+
     </coding>
   </valueString>
 </Observation>

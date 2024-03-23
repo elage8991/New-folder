@@ -18,7 +18,7 @@
   <effectiveDateTime value="2024-03-10"/>
   <valueInteger>
     <coding>
-      <value value="Current some day smoker">
+      <value value="Current some day smoker"/>
     </coding>
   </valueInteger>
 </Observation>

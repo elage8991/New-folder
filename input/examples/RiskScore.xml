@@ -18,7 +18,7 @@ xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single
   <effectiveDateTime value="2024-03-10"/>
   <valueInteger>
     <coding>
-      <value value="4">
+      <value value="4"/>
     </coding>
   </valueInteger>
   <hasMember>
