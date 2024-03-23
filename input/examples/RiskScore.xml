@@ -32,11 +32,12 @@ xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single
    <hasMember>
     <system value="Rauchen" />
     <reference value="Rauchen_Status"/>
+  </hasMember>
   <hasMember>
     <system value="Schutzfaktor" />
     <reference value="Schutzfaktor_Parodontitis"/>
   </hasMember>
-    <hasMember>
+  <hasMember>
     <system value="Bildungsniveau" />
     <reference value="Bildungsniveau"/>
   </hasMember>
