@@ -1,5 +1,5 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="Mundkrebs_Risikofaktor" />
+  <id value="Mundkrebs_RisikofaktorCS" />
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
   </meta>
