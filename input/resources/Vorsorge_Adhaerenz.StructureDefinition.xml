@@ -21,8 +21,13 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
       <binding>
         <strength value="required" />
+        <description value="Adhaerenz" />
+        <valueSet value="http://somewhere.org/fhir/ValueSet/Adhaerenz" />
       </binding>
     </element>
   </differential>

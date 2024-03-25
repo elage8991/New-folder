@@ -1,5 +1,5 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="Risikofaktor_Paro" />
+  <id value="Risikofaktor_ParoCS" />
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
   </meta>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="Riskfactor2"/>
+  <meta>
+    <profile value="http://somewhere.org/fhir/StructureDefinition/Risikofaktor_Parodontitis"/>
+  </meta>
+  <status value="final"/>
+  <code>
+     <coding>
+      <code value="Risikofaktor Paro"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient_Paro"/>
+  </subject>
+  <effectiveDateTime value="2024-03-10"/>
+  <valueString>
+    <coding>
+      <system value="http://somewhere.org/fhir/ValueSet/Risikofaktor_Paro"/>
+      <code value="MH"/>
+      <display value="Schlechte Mundhygiene"/>
+    </coding>
+  </valueString>
+</Observation>

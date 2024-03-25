@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="RauchenExample"/>
+  <meta>
+    <profile value="http://somewhere.org/fhir/StructureDefinition/Rauchen_Status"/>
+  </meta>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="72166-2"/>
+      <display value="Tobacco smoking status"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient_Paro"/>
+  </subject>
+  <effectiveDateTime value="2024-03-10"/>
+  <valueInteger>
+    <coding>
+      <value value="Current some day smoker"/>
+    </coding>
+  </valueInteger>
+</Observation>
