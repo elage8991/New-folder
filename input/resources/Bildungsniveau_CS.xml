@@ -1,5 +1,5 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="Bildungsniveau" />
+  <id value="BildungsniveauCS" />
   <meta>
     <profile value="http://somewhere.org/fhir/StructureDefinition/shareablecodesystem" />
   </meta>
