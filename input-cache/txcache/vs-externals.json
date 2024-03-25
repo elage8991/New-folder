@@ -5,14 +5,14 @@
   "http://somewhere.org/fhir/CodeSystem/Schutzfaktor_Paro" : null,
   "http://somewhere.org/fhir/CodeSystem/Zahnstatus" : null,
   "http://somewhere.org/fhir/CodeSystem/Karies_Risikofaktoren" : null,
-  "http://somewhere.org/fhir/CodeSystem/Sechstant" : null,
   "http://somewhere.org/fhir/CodeSystem/Bildungsniveau" : null,
-  "http://somewhere.org/fhir/CodeSystem/Risikofaktor_Paro" : null,
+  "http://somewhere.org/fhir/ValueSet/Sechstant" : null,
   "http://somewhere.org/fhir/CodeSystem/Karies_Schutzfaktoren" : null,
   "http://somewhere.org/fhir/CodeSystem/Alkoholkonsum" : null,
   "http://somewhere.org/fhir/CodeSystem/PSI" : null,
   "http://somewhere.org/fhir/CodeSystem/Kariesgeschichte" : null,
-  "https://example.org/fhir/ValueSet/Alkoholkonsum" : null,
+  "http://somewhere.org/fhir/CodeSystem/Adhaerenz" : null,
   "http://somewhere.org/fhir/CodeSystem/Plaqueindex_Quigley_Hein" : null,
-  "http://somewhere.org/fhir/CodeSystem/Diabetes_Einstellung" : null
+  "http://somewhere.org/fhir/CodeSystem/Diabetes_Einstellung" : null,
+  "http://somewhere.org/fhir/CodeSystem/Sextant" : null
 }
