@@ -8,19 +8,17 @@ xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single
   </meta>
   <status value="final"/>
   <code>
-    <fixedCodeableConcept>
     <text value="Bildungsniveau"/>
-    </fixedCodeableConcept>
   </code>
   <subject>
     <reference value="PatientParo"/>
   </subject>
   <effectiveDateTime value="2024-03-10"/>
-  <valueString>
+  <value>
     <coding>
       <system value="http://somewhere.org/fhir/ValueSet/Bildungsniveau"/>
       <code value="HRA"/>
       <valueString value="Haupt- oder Realschulabschluss"/>
     </coding>
-  </valueString>
+  </value>
 </Observation>
