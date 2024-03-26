@@ -8,12 +8,12 @@ xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single
   </meta>
   <status value="final"/>
   <code>
-     <coding>
-      <valueString value="Bildungsniveau" />
-    </coding>
+    <fixedCodeableConcept>
+    <text value="Bildungsniveau"/>
+    </fixedCodeableConcept>
   </code>
   <subject>
-    <reference value="Patient_Paro"/>
+    <reference value="PatientParo"/>
   </subject>
   <effectiveDateTime value="2024-03-10"/>
   <valueString>
